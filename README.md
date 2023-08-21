@@ -26,6 +26,10 @@ It's also possible to install the plugin via Composer:
 
 ## Changelog
 
+### 1.0.3
+
+- Exclude all super admins from the list of admins.
+
 ### 1.0.2
 
 - Add Norwegian translation.

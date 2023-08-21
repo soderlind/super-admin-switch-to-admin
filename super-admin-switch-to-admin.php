@@ -12,7 +12,7 @@
  * Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * GitHub Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * Description: If you are logged in as a super admin, allows you to switch to a regular admin account on the current site.
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Per Soderlind
  * Author URI:  https://soderlind.no
  * Network:     true
@@ -73,12 +73,12 @@ class SuperAdminSwitchToAdmin {
 				return;
 			}
 
-			// List all admins for the current site, except for the super admin.
+			// List all admins for the current site, except for the super admins.
 			$admins = get_users(
 				[
 					'blog_id' => \get_current_blog_id(),
 					'role'    => 'administrator',
-					'exclude' => [ get_current_user_id() ],
+					'exclude' => $this->get_super_admins_ids(),
 				]
 			);
 
@@ -93,7 +93,6 @@ class SuperAdminSwitchToAdmin {
 			}
 		}
 	}
-
 
 	/**
 	 * Admin notice.
@@ -125,6 +124,21 @@ class SuperAdminSwitchToAdmin {
 		</div>
 		<?php
 	}
+
+	/**
+	 * Get super admins ids.
+	 *
+	 * @return array
+	 */
+	private function get_super_admins_ids() {
+		$super_admins     = \get_super_admins();
+		$super_admins_ids = [];
+		foreach ( $super_admins as $super_admin ) {
+			$super_admins_ids[] = \get_user_by( 'login', $super_admin )->ID;
+		}
+		return $super_admins_ids;
+	}
+
 }
 
 new SuperAdminSwitchToAdmin();
