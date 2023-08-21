@@ -1,0 +1,8 @@
+{
+    "name": "soderlind/super-admin-switch-to-admin",
+    "description": "Super Admin Switch to Admin",
+    "type": "wordpress-plugin",
+    "homepage": "https://github.com/soderlind/super-admin-switch-to-admin",
+    "license": "GPL-2.0-or-later",
+    "require": {}
+}
