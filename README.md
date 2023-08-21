@@ -2,6 +2,8 @@
 
 If you are logged in as a super admin, this plugin allows you to switch to a regular admin account on the current site. It lists all admins for the current site, except for the super admin, and creates a linked list in the admin notices.
 
+<img src=".wordpress-org/screenshot-1.png">
+
 ## Prerequisites
 
 - WordPress Multisite

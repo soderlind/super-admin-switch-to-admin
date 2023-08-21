@@ -4,7 +4,7 @@ Tags: super admin, multisite, admin, switch
 Requires at least: 6.0
 Tested up to: 6.3
 Requires PHP: 7.3 
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,11 @@ It lists all admins for the current site, except for the super admin., and creat
 
 1. Upload the plugin files to the `/wp-content/plugins/super-admin-switch-to-admin` directory. 
 2. Network Activate the plugin through the network 'Plugins' screen in WordPress.
+
+
+== Screenshots ==
+
+1. The plugin in action.
 
 == Changelog ==
 
