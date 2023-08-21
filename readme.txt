@@ -4,7 +4,7 @@ Tags: super admin, multisite, admin, switch
 Requires at least: 6.0
 Tested up to: 6.3
 Requires PHP: 7.3 
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,13 @@ It lists all admins for the current site, except for the super admin., and creat
 1. The plugin in action.
 
 == Changelog ==
+
+= 1.0.2 =
+* Add Norwegian translation.
+
+= 1.0.1 =
+* Add a screenshot.
+
 
 = 1.0.0 =
 * Initial release

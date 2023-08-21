@@ -16,6 +16,14 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 ## Changelog
 
+### 1.0.2
+
+- Add Norwegian translation.
+
+### 1.0.1
+
+- Add a screenshot.
+
 ### 1.0.0
 
 - Initial release
