@@ -66,7 +66,7 @@ class SuperAdminSwitchToAdmin {
 
 		// Check if User Switching plugin is active.
 		if ( function_exists( 'current_user_switched' ) ) {
-			\load_textdomain( 'super-admin-switch-to-admin', \plugin_dir_path( __FILE__ ) . 'languages/super-admin-switch-to-admin-' . get_locale() . '.mo' );
+			\load_plugin_textdomain( 'super-admin-switch-to-admin', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 			$switched_user = \current_user_switched();
 			// Bail if the user has already switched to another admin.
 			if ( $switched_user ) {
