@@ -82,7 +82,7 @@ class SuperAdminSwitchToAdmin {
 				]
 			);
 
-			// Create a dropdown list of all the admins for the current site.
+			// Collect all the admins for the current site.
 			foreach ( $admins as $admin ) {
 				$this->admin_list[ $admin->ID ] = $admin->display_name;
 			}
