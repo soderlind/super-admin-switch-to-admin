@@ -12,7 +12,11 @@ If you are logged in as a super admin, allows you to switch to a regular admin a
 
 == Description ==
 
-Prerequisite: WordPress Multisite and the [User Switching](https://wordpress.org/plugins/user-switching/) plugin.
+Prerequisite: 
+
+- WordPress Multisite
+- [User Switching](https://wordpress.org/plugins/user-switching/) plugin
+- The subsite must have at least one regular admin account.
 
 If you are logged in as a super admin, this plugin allows you to switch to a regular admin account on the current site. 
 It lists all admins for the current site, except for the super admin., and creates a  linked list  in the admin notices.

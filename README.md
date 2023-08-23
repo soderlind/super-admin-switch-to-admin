@@ -8,6 +8,7 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 - WordPress Multisite
 - [User Switching](https://wordpress.org/plugins/user-switching/) plugin
+- The subsite must have at least one regular admin account.
 
 ## Installation
 
