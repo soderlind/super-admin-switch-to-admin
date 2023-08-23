@@ -55,7 +55,7 @@ class SuperAdminSwitchToAdmin {
 	 * @return void
 	 */
 	public function switch_to_admin() {
-		// Bail if current  if the current site is not a multisite.
+		// Bail if current site is not a multisite.
 		if ( ! \is_multisite() ) {
 			return;
 		}
