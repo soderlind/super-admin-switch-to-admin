@@ -12,20 +12,26 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 ## Installation
 
-Either (recommended):
+- **Quick Install**
 
-- Download the plugin files and extract `super-admin-switch-to-admin.php` to the `wp-content/mu-plugins` directory.
+   - Download [`super-admin-switch-to-admin.zip`](https://github.com/soderlind/super-admin-switch-to-admin/releases/latest/download/super-admin-switch-to-admin.zip)
+   - Upload via WordPress Network > Plugins > Add New > Upload Plugin
+   - Network activate the plugin.
 
-Or:
+- **Composer Install**
 
-- Download the plugin files and extract `super-admin-switch-to-admin.php` to the `wp-content/plugins/super-admin-switch-to-admin` directory.
-- Network Activate the plugin through the network 'Plugins' screen in WordPress.
+   ```bash
+   composer require soderlind/super-admin-switch-to-admin
+   ```
 
-It's also possible to install the plugin via Composer:
+- **Updates**
+   * Plugin updates are handled automatically via GitHub. No need to manually download and install updates.
 
-- Install the plugin via Composer: `composer require soderlind/super-admin-switch-to-admin`
 
 ## Changelog
+
+### 1.0.4
+- Add plugin updater.
 
 ### 1.0.3
 

@@ -12,7 +12,7 @@
  * Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * GitHub Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * Description: If you are logged in as a super admin, allows you to switch to a regular admin account on the current site.
- * Version:     1.0.3
+ * Version:     1.0.4
  * Author:      Per Soderlind
  * Author URI:  https://soderlind.no
  * Network:     true
@@ -21,13 +21,25 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-declare( strict_types = 1 );
+declare(strict_types=1);
 namespace Soderlind\Plugin\SuperAdminSwitchToAdmin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	wp_die();
 }
 
+
+define( 'SWITCH_TO_ADMIN_VERSION', '1.0.4' );
+define( 'SWITCH_TO_ADMIN_FILE', __FILE__ );
+define( 'SWITCH_TO_ADMIN_PATH', plugin_dir_path( SWITCH_TO_ADMIN_FILE ) );
+
+require_once SWITCH_TO_ADMIN_PATH . 'vendor/autoload.php';
+/**
+ * Load the plugin updater class.
+ */
+require_once dirname( __FILE__ ) . '/class-additional-javascript-updater.php';
+// Initialize the updater.
+$additional_javascript_updater = new Additional_JavaScript_Updater();
 
 /**
  * Class SuperAdminSwitchToAdmin
@@ -75,7 +87,7 @@ class SuperAdminSwitchToAdmin {
 
 			// List all admins for the current site, except for the super admins.
 			$admins = get_users(
-				[
+				[ 
 					'blog_id' => \get_current_blog_id(),
 					'role'    => 'administrator',
 					'exclude' => $this->get_super_admins_ids(),
@@ -102,24 +114,24 @@ class SuperAdminSwitchToAdmin {
 	public function admin_notice() {
 		?>
 		<div class="updated notice notice-success is-dismissible">
-			
+
 			<p>
 				<span class="dashicons dashicons-admin-users" style="color:#56c234" aria-hidden="true"></span>
 				<?php esc_html_e( 'You are logged in as a super admin. You can switch to a regular admin account on this site:', 'super-admin-switch-to-admin' ); ?>
-			
-			<?php
-			// list admins in wp notice as a comma separated list. do not add a comma after the last admin.
-			$last_admin = end( $this->admin_list );
-			foreach ( $this->admin_list as $admin_id => $admin_name ) {
-				printf(
-					'<a href="%1$s">%2$s</a>%3$s',
-					esc_url( \user_switching::maybe_switch_url( \get_user_by( 'id', $admin_id ) ) ),
-					esc_html( $admin_name ),
-					$admin_name === $last_admin ? '' : ', '
-				);
-			}
 
-			?>
+				<?php
+				// list admins in wp notice as a comma separated list. do not add a comma after the last admin.
+				$last_admin = end( $this->admin_list );
+				foreach ( $this->admin_list as $admin_id => $admin_name ) {
+					printf(
+						'<a href="%1$s">%2$s</a>%3$s',
+						esc_url( \user_switching::maybe_switch_url( \get_user_by( 'id', $admin_id ) ) ),
+						esc_html( $admin_name ),
+						$admin_name === $last_admin ? '' : ', '
+					);
+				}
+
+				?>
 			</p>
 		</div>
 		<?php
