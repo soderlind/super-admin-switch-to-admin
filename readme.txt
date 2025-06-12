@@ -36,6 +36,9 @@ It lists all admins for the current site, except for the super admin., and creat
 
 == Changelog ==
 
+= 1.0.6 =
+* Update installation instructions.
+
 = 1.0.5 =
 * Hotfix: Add missing class for plugin updater.
 
