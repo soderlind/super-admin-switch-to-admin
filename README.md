@@ -30,6 +30,9 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 ## Changelog
 
+### 1.0.5
+- Hotfix: Add missing class for plugin updater.
+
 ### 1.0.4
 - Add plugin updater.
 

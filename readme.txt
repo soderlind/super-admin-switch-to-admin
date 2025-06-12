@@ -1,10 +1,10 @@
 === Super Admin Switch to Admin ===
 Contributors: PerS
 Tags: super admin, multisite, admin, switch
-Requires at least: 6.0
-Tested up to: 6.3
-Requires PHP: 7.3 
-Stable tag: 1.0.4
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 8.2
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ It lists all admins for the current site, except for the super admin., and creat
 1. The plugin in action.
 
 == Changelog ==
+
+= 1.0.5 =
+* Hotfix: Add missing class for plugin updater.
 
 = 1.0.4 =
 * Add plugin updater.

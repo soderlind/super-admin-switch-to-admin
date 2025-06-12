@@ -12,7 +12,7 @@
  * Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * GitHub Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * Description: If you are logged in as a super admin, allows you to switch to a regular admin account on the current site.
- * Version:     1.0.4
+ * Version:     1.0.5
  * Author:      Per Soderlind
  * Author URI:  https://soderlind.no
  * Network:     true
@@ -37,9 +37,9 @@ require_once SWITCH_TO_ADMIN_PATH . 'vendor/autoload.php';
 /**
  * Load the plugin updater class.
  */
-require_once dirname( __FILE__ ) . '/class-additional-javascript-updater.php';
+require_once dirname( __FILE__ ) . '/class-switch-to-admin-updater.php';
 // Initialize the updater.
-$additional_javascript_updater = new Additional_JavaScript_Updater();
+$switch_to_admin_updater = new Switch_To_Admin_Updater();
 
 /**
  * Class SuperAdminSwitchToAdmin
