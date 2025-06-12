@@ -1,0 +1,34 @@
+{
+	"name": "super-admin-switch-to-admin",
+	"version": "1.0.4",
+	"description": "Switch to the admin user for Super Admins.",
+	"keywords": [
+		"wordpress",
+		"wp-cli",
+		"wp-cli-command",
+		"wp-customizer",
+		"javascript",
+		"super-admin",
+		"admin"
+	],
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"bump": "wp-update-project-version -s package.json -p readme.txt composer.json super-admin-switch-to-admin.php",
+		"makepot": "wp i18n make-pot . languages/super-admin-switch-to-admin.pot --exclude=vendor,node_modules",
+		"makejson": "wp i18n make-json languages --pretty-print"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/soderlind/super-admin-switch-to-admin.git"
+	},
+	"author": "Per Søderlind",
+	"license": "GPLv2",
+	"bugs": {
+		"url": "https://github.com/soderlind/super-admin-switch-to-admin/issues"
+	},
+	"homepage": "https://github.com/soderlind/super-admin-switch-to-admin#readme",
+	"devDependencies": {
+		"@soderlind/wp-project-version-sync": "^2.0.2"
+	}
+}
