@@ -22,7 +22,6 @@
 		"type": "git",
 		"url": "git+https://github.com/soderlind/super-admin-switch-to-admin.git"
 	},
-	"keywords": [],
 	"author": "Per Søderlind",
 	"license": "GPLv2",
 	"bugs": {
