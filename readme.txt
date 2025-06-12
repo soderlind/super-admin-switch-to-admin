@@ -23,13 +23,16 @@ It lists all admins for the current site, except for the super admin., and creat
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/super-admin-switch-to-admin` directory. 
-2. Network Activate the plugin through the network 'Plugins' screen in WordPress.
+1. **Quick Install**
+
+   * Download [`super-admin-switch-to-admin.zip`](https://github.com/soderlind/super-admin-switch-to-admin/releases/latest/download/super-admin-switch-to-admin.zip)
+   * Upload via WordPress Network > Plugins > Add New > Upload Plugin
+   * Network activate the plugin.
+
+2. **Updates**
+   * Plugin updates are handled automatically via GitHub. No need to manually download and install updates.
 
 
-== Screenshots ==
-
-1. The plugin in action.
 
 == Changelog ==
 
