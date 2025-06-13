@@ -30,6 +30,10 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 ## Changelog
 
+### 1.0.7
+- Use generic [WordPress Plugin GitHub Updater](https://github.com/soderlind/wordpress-plugin-gitHub-updater?tab=readme-ov-file#wordpress-plugin-github-updater)
+
+
 ### 1.0.6
 - Update installation instructions.
 

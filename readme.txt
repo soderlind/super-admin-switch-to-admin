@@ -4,7 +4,7 @@ Tags: super admin, multisite, admin, switch
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 8.2
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ It lists all admins for the current site, except for the super admin., and creat
 
 
 == Changelog ==
+= 1.0.7 =
+* Use generic [WordPress Plugin GitHub Updater](https://github.com/soderlind/wordpress-plugin-gitHub-updater?tab=readme-ov-file#wordpress-plugin-github-updater)
+
 
 = 1.0.6 =
 * Update installation instructions.
