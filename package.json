@@ -1,6 +1,6 @@
 {
 	"name": "super-admin-switch-to-admin",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Switch to the admin user for Super Admins.",
 	"keywords": [
 		"wordpress",
