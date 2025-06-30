@@ -30,6 +30,9 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
 
 ## Changelog
 
+### 1.0.9
+* Another bugfix. Note to self, test better before releasing.
+
 ### 1.0.8
 * Bugfix
 

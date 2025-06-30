@@ -12,7 +12,7 @@
  * Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * GitHub Plugin URI: https://github.com/soderlind/super-admin-switch-to-admin
  * Description: If you are logged in as a super admin, allows you to switch to a regular admin account on the current site.
- * Version:     1.0.8
+ * Version:     1.0.9
  * Author:      Per Soderlind
  * Author URI:  https://soderlind.no
  * Network:     true
@@ -37,7 +37,7 @@ require_once SWITCH_TO_ADMIN_PATH . 'vendor/autoload.php';
 
 // Include plugin updater
 if ( ! class_exists( 'Soderlind\WordPress\GitHub_Plugin_Updater' ) ) {
-	require_once SWITCH_TO_ADMIN_PATH . 'includes/class-github-plugin-updater.php';
+	require_once SWITCH_TO_ADMIN_PATH . 'class-github-plugin-updater.php';
 }
 
 // Initialize the plugin updater.
