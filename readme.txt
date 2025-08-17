@@ -4,7 +4,7 @@ Tags: super admin, multisite, admin, switch
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 8.2
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,9 @@ It lists all admins for the current site, except for the super admin., and creat
 
 
 == Changelog ==
+
+= 1.0.11 =
+* Version bump and maintenance release.
 
 = 1.0.10 =
 * Force, via plugin header, the required User Switching plugin.
