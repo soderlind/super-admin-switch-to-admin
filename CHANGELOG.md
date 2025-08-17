@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.11
+* Version bump and maintenance release.
+
 ### 1.0.10
 * Force, via plugin header, the required User Switching plugin.
 
