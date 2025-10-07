@@ -25,7 +25,7 @@ If you are logged in as a super admin, this plugin allows you to switch to a reg
    ```
 
 - **Updates**
-   * Plugin updates are handled automatically via GitHub. No need to manually download and install updates.
+   * Plugin [updates are handled automatically](https://github.com/soderlind/wordpress-plugin-github-updater#readme) via GitHub. No need to manually download and install updates.
 
 
 ## Copyright and License
